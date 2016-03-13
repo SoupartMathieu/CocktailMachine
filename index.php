@@ -17,7 +17,7 @@
     .img-rounded{
         height: 140px;
         width: 140px;
-        float: right;
+        float: left;
     }
 </style>
 <?php
@@ -116,9 +116,9 @@ else if (isset($_POST['led3Off']))
     <ul>
         <li ng-repeat="cocktail in cocktails">
             <img class="img-rounded" src="{{cocktail.image}}">
-            <p>{{cocktail.ingredients.get(0)}} </p>
-            <p>{{cocktail.ingredients.get(1)}}</p>
-            <p>{{cocktail.ingredients.get(2)}} </p>
+            <p>{{cocktail.ingredients}} </p>
+            <p>{{cocktail.ingredients}}</p>
+            <p>{{cocktail.ingredients}} </p>
         </li>
     </ul>
 </div>
