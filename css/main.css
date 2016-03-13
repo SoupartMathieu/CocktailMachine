@@ -1,0 +1,19 @@
+.On{
+    height: 30%;
+    width: 30%;
+    background-color: green;
+
+}
+.off{
+    height: 30%;
+    width: 30%;
+    background-color: red;
+}
+body{
+    background-image: url(/resources/images/seamless_paper_texture.png);
+}
+.img-rounded{
+    height: 140px;
+    width: 140px;
+    float: left;
+}

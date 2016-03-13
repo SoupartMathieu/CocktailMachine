@@ -1,91 +1,8 @@
 
-<style>
-    .On{
-        height: 30%;
-        width: 30%;
-        background-color: green;
-
-    }
-    .off{
-        height: 30%;
-        width: 30%;
-        background-color: red;
-    }
-    body{
-        background-image: url(resources/images/seamless_paper_texture.png);
-    }
-    .img-rounded{
-        height: 140px;
-        width: 140px;
-        float: left;
-    }
-</style>
-<?php
-system("gpio mode 0 out");
-system("gpio mode 1 out");
-system("gpio mode 2 out");
-if (isset($_POST['led1On']))
-{
-    system("gpio write 0 1");
-    system.sleep(3);
-    system("gpio write 0 0");
-
-    system("gpio write 2 1");
-    system.sleep(2);
-    system("gpio write 2 0");
-
-    system("gpio write 1 1");
-    system.sleep(1);
-    system("gpio write 1 0");
-
-}
-else if (isset($_POST['led2On']))
-{
-    $i = 0 ;
-    while ( $i < 10) {
-        system("gpio write 0 1");
-        system.sleep(1);
-        system("gpio write 0 0");
-        $i++;
-    }
-    system("gpio write 2 1");
-    system.sleep(2);
-    system("gpio write 2 0");
-
-    system("gpio write 1 1");
-    system.sleep(1);
-    system("gpio write 1 0");
-}
-else if (isset($_POST['led3On']))
-{
-    system("gpio write 0 1");
-    system.sleep(1);
-    system("gpio write 2 1");
-    system.sleep(1);
-    system("gpio write 0 0");
-    system.sleep(2);
-    system("gpio write 1 1");
-    system.sleep(1);
-    system("gpio write 2 0");
-    system.sleep(1);
-    system("gpio write 1 0");
-}
-else if (isset($_POST['led1Off']))
-{
-    system("gpio write 0 0");
-}
-else if (isset($_POST['led2Off']))
-{
-    system("gpio write 1 0");
-}
-else if (isset($_POST['led3Off']))
-{
-    system("gpio write 2 0");
-}
-?>
 <html>
 <head>
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
     <script type="text/javascript" src="js/angular.min.js"></script>
     <script type="text/javascript" src="controllers/cocktailController.js"></script>
 </head>
@@ -115,10 +32,15 @@ else if (isset($_POST['led3Off']))
 <div ng-controller="cocktailController">
     <ul>
         <li ng-repeat="cocktail in cocktails">
-            <img class="img-rounded" src="{{cocktail.image}}">
-            <p>{{cocktail.ingredients}} </p>
-            <p>{{cocktail.ingredients}}</p>
-            <p>{{cocktail.ingredients}} </p>
+            <div class="container-fluid cocktail-display">
+                <img class="img-rounded" src="{{cocktail.image}}">
+                <p>{{cocktail.ingredients}} </p>
+                <p>{{cocktail.ingredients}}</p>
+                <p>{{cocktail.ingredients}} </p>
+                <form action="phpScripts/test.php" method="post">
+                    <button name="led1On" class="btn btn-default" type="button" ng-click="make(cocktail)">Sequence 1</button>
+                </form>
+            </div>
         </li>
     </ul>
 </div>
