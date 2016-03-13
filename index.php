@@ -108,7 +108,9 @@ else if (isset($_POST['led3Off']))
 </form>
 
 <ul ng-controller="cocktailController">
-    <li ng-repeat="cocktail in cocktails">{{cocktail.rhum}}</li>
+    <li ng-repeat="cocktail in cocktails">
+        <p>{{cocktail.ingredients}}</p>
+    </li>
 </ul>
 </body>
 </html>
