@@ -1,4 +1,8 @@
-
+<?php
+system("gpio mode 0 out");
+system("gpio mode 1 out");
+system("gpio mode 2 out");
+?>
 <html>
 <head>
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -38,7 +42,7 @@
                 <p>{{cocktail.ingredients}}</p>
                 <p>{{cocktail.ingredients}} </p>
                 <form action="phpScripts/test.php" method="post">
-                    <button name="led1On" class="btn btn-default" type="button" ng-click="make(cocktail)">Sequence 1</button>
+                    <button name="led1On" class="btn btn-default" type="button" onclick="makeCocktail(cocktail)">Sequence 1</button>
                 </form>
             </div>
         </li>

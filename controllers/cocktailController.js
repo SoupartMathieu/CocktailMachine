@@ -32,7 +32,7 @@ app.controller('cocktailController', function ($scope) {
         }
     ];
     $scope.make = function(){
-        var text =  "<?php cocktaiMakerFunction(); ?> ";
-        alert(text);
+      //  var text =  "<?php cocktaiMakerFunction(); ?> ";
+       // alert(text);
     }
 });
