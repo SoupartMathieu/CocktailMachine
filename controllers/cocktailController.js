@@ -41,6 +41,7 @@ app.controller('cocktailController', function ($scope) {
 
         (wpi.HIGH) ?  wpi.digitalWrite(pin, wpi.LOW) : wpi.digitalWrite(pin, wpi.HIGH) ;
 
+        console.log("test");
 
         }
 
