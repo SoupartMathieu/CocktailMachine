@@ -1,14 +1,14 @@
 
 <style>
     .On{
-        height: 33%;
-        width: 33%;
+        height: 30%;
+        width: 30%;
         background-color: green;
 
     }
     .off{
-        height: 33%;
-        width: 33%;
+        height: 30%;
+        width: 30%;
         background-color: red;
     }
 </style>
