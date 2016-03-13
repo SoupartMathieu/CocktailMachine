@@ -111,6 +111,7 @@ else if (isset($_POST['led3Off']))
     <ul>
         <li ng-repeat="cocktail in cocktails">
             <p>{{cocktail.ingredients}}</p>
+            <img src="{{cocktail.image}}">
         </li>
     </ul>
 </div>

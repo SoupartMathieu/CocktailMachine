@@ -2,6 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="91e441da-4c62-4aa0-b522-55e141be15fe" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/images/margarita.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/images/punch-planteur.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/images/tiPunch.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/cocktailController.js" afterPath="$PROJECT_DIR$/controllers/cocktailController.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
     </list>
@@ -30,18 +34,8 @@
           <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/index.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.26333907">
-                  <caret line="84" column="73" selection-start-line="84" selection-start-column="73" selection-end-line="84" selection-end-column="73" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="cocktailController.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/controllers/cocktailController.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
-                  <caret line="20" column="24" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
+                <state vertical-scroll-proportion="0.70740104">
+                  <caret line="113" column="40" selection-start-line="113" selection-start-column="40" selection-end-line="113" selection-end-column="40" />
                   <folding />
                 </state>
               </provider>
@@ -64,8 +58,8 @@
           <file leaf-file-name="cocktailController.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/controllers/cocktailController.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.72817135">
-                  <caret line="26" column="3" selection-start-line="26" selection-start-column="3" selection-end-line="26" selection-end-column="3" />
+                <state vertical-scroll-proportion="0.7841845">
+                  <caret line="28" column="32" selection-start-line="28" selection-start-column="32" selection-end-line="28" selection-end-column="32" />
                   <folding />
                 </state>
               </provider>
@@ -86,8 +80,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/controllers/cocktailController.js" />
         <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/controllers/cocktailController.js" />
       </list>
     </option>
   </component>
@@ -148,6 +142,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="CocktailMachine" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CocktailMachine" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CocktailMachine" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="images" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -309,18 +321,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/cocktailController.js">
+    <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="20" column="24" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
+        <state vertical-scroll-proportion="0.70740104">
+          <caret line="113" column="40" selection-start-line="113" selection-start-column="40" selection-end-line="113" selection-end-column="40" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
+    <entry file="file://$PROJECT_DIR$/controllers/cocktailController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.26333907">
-          <caret line="84" column="73" selection-start-line="84" selection-start-column="73" selection-end-line="84" selection-end-column="73" />
+        <state vertical-scroll-proportion="0.7841845">
+          <caret line="28" column="32" selection-start-line="28" selection-start-column="32" selection-end-line="28" selection-end-column="32" />
           <folding />
         </state>
       </provider>
