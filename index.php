@@ -1,12 +1,15 @@
 
 <style>
     .On{
-        height: 200px;
-        width: 200px;
+        height: 33%;
+        width: 33%;
+        background-color: green;
+
     }
     .off{
-        height: 200px;
-        width: 200px;
+        height: 33%;
+        width: 33%;
+        background-color: red;
     }
 </style>
 <?php
