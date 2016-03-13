@@ -32,12 +32,16 @@ app.controller('cocktailController', function ($scope) {
         }
     ];
     $scope.make = function(){
-        var wpi = require('wiring-pi');
-        wpi.setup('wpi');
-        wpi.pinMode(1, wpi.OUTPUT);
-        wpi.pullUpDnControl(7, wpi.PUD_UP);
-        wpi.wiringPiISR(7, wpi.INT_EDGE_FALLING, function(delta) {
-            console.log('Pin 7 changed to LOW (', delta, ')');
-        });
-    }
+        var pin = 0;
+
+        var wpi = context.global.wpi;
+        wpi = require('wiring-pi');
+        wpi.wiringPiSetup();
+        wpi.pinMode(pin, wpi.OUTPUT);
+
+        (wpi.HIGH) ?  wpi.digitalWrite(pin, wpi.LOW) : wpi.digitalWrite(pin, wpi.HIGH) ;
+
+
+        }
+
 });

@@ -9,6 +9,7 @@ system("gpio mode 2 out");
     <link href="css/main.css" rel="stylesheet">
     <script type="text/javascript" src="js/angular.min.js"></script>
     <script type="text/javascript" src="controllers/cocktailController.js"></script>
+    <script src="node_modules/wiring-pi"></script>
 </head>
 <body ng-app="cocktailMachine">
 <header>
@@ -47,6 +48,7 @@ system("gpio mode 2 out");
             </div>
         </li>
     </ul>
+
 </div>
 </body>
 </html>
