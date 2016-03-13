@@ -82,6 +82,7 @@ else if (isset($_POST['led3Off']))
 <head>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <script type="text/javascript" src="js/angular.min.js"></script>
+    <script type="text/javascript" src="controllers/cocktailController.js"></script>
 </head>
 <body ng-app="cocktailMachine">
 <header>
@@ -106,11 +107,12 @@ else if (isset($_POST['led3Off']))
         <button name="led3Off" class="btn btn-danger">Led 3 Off</button>
     </p>
 </form>
-
-<ul ng-controller="cocktailController">
-    <li ng-repeat="cocktail in cocktails">
-        <p>{{cocktail.ingredients}}</p>
-    </li>
-</ul>
+<div ng-controller="cocktailController">
+    <ul>
+        <li ng-repeat="cocktail in cocktails">
+            <p>{{cocktail.ingredients}}</p>
+        </li>
+    </ul>
+</div>
 </body>
 </html>
