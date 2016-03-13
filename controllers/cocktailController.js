@@ -34,8 +34,8 @@ app.controller('cocktailController', function ($scope) {
     $scope.make = function(){
         var pin = 0;
 
-        var wpi = context.global.wpi;
-        wpi = require('wiring-pi');
+
+       var  wpi = require('wiring-pi');
         wpi.wiringPiSetup();
         wpi.pinMode(pin, wpi.OUTPUT);
 
