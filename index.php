@@ -11,6 +11,9 @@
         width: 30%;
         background-color: red;
     }
+    body{
+        background-image: url(resources/images/seamless_paper_texture.png);
+    }
 </style>
 <?php
 system("gpio mode 0 out");
@@ -95,9 +98,9 @@ else if (isset($_POST['led3Off']))
         <button name="led3On" class="btn btn-default">Sequence 3</button>
     </p>
     <p>
-        <button name="led1Off" class="Off">Led 1 Off</button>
-        <button name="led2Off" class="Off">Led 2 Off</button>
-        <button name="led3Off" class="Off">Led 3 Off</button>
+        <button name="led1Off" class="btn btn-danger">Led 1 Off</button>
+        <button name="led2Off" class="btn btn-danger">Led 2 Off</button>
+        <button name="led3Off" class="btn btn-danger">Led 3 Off</button>
     </p>
 </form>
 </body>
