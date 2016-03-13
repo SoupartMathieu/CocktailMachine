@@ -19,6 +19,17 @@ system("gpio mode 2 out");
 if (isset($_POST['led1On']))
 {
     system("gpio write 0 1");
+    system.sleep(3);
+    system("gpio write 0 0");
+
+    system("gpio write 2 1");
+    system.sleep(2);
+    system("gpio write 2 0");
+
+    system("gpio write 1 1");
+    system.sleep(1);
+    system("gpio write 1 0");
+
 }
 else if (isset($_POST['led2On']))
 {
