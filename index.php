@@ -44,12 +44,12 @@ else if (isset($_POST['led3Off']))
     <p>
         <button name="led1On" class="On">Led 1 On</button>
         <button name="led2On" class="On">Led 2 On</button>
-        <button name="led3on" class="On">Led 3 On</button>
+        <button name="led3On" class="On">Led 3 On</button>
     </p>
     <p>
-        <button name="led1off" class="Off">Led 1 Off</button>
-        <button name="led2off" class="Off">Led 2 Off</button>
-        <button name="led3off" class="Off">Led 3 Off</button>
+        <button name="led1Off" class="Off">Led 1 Off</button>
+        <button name="led2Off" class="Off">Led 2 Off</button>
+        <button name="led3Off" class="Off">Led 3 Off</button>
     </p>
 </form>
 </body>
