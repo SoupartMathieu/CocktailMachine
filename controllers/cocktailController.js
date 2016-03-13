@@ -32,7 +32,12 @@ app.controller('cocktailController', function ($scope) {
         }
     ];
     $scope.make = function(){
-      //  var text =  "<?php cocktaiMakerFunction(); ?> ";
-       // alert(text);
+        var wpi = require('wiring-pi');
+        wpi.setup('wpi');
+        wpi.pinMode(1, wpi.OUTPUT);
+        wpi.pullUpDnControl(7, wpi.PUD_UP);
+        wpi.wiringPiISR(7, wpi.INT_EDGE_FALLING, function(delta) {
+            console.log('Pin 7 changed to LOW (', delta, ')');
+        });
     }
 });

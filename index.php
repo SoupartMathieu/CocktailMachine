@@ -42,7 +42,7 @@ system("gpio mode 2 out");
                 <p>{{cocktail.ingredients}}</p>
                 <p>{{cocktail.ingredients}} </p>
                 <form action="phpScripts/test.php" method="post">
-                    <button name="led1On" class="btn btn-default" type="button" onclick="makeCocktail(cocktail)">Sequence 1</button>
+                    <button name="led1On" class="btn btn-default" type="button" onclick="make()">Sequence 1</button>
                 </form>
             </div>
         </li>
