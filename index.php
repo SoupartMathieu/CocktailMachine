@@ -14,6 +14,10 @@
     body{
         background-image: url(resources/images/seamless_paper_texture.png);
     }
+    .img-rounded{
+        size: 140px;
+        float: right;
+    }
 </style>
 <?php
 system("gpio mode 0 out");
@@ -110,8 +114,10 @@ else if (isset($_POST['led3Off']))
 <div ng-controller="cocktailController">
     <ul>
         <li ng-repeat="cocktail in cocktails">
-            <p>{{cocktail.ingredients}}</p>
-            <img src="{{cocktail.image}}">
+            <p>{{cocktail.ingredients[0]}}</p>
+            <p>{{cocktail.ingredients[1]}}</p>
+            <p>{{cocktail.ingredients[2]}}</p>
+            <img class="img-rounded" src="{{cocktail.image}}">
         </li>
     </ul>
 </div>
