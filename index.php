@@ -42,9 +42,7 @@ system("gpio mode 2 out");
                 <p>{{cocktail.ingredients}} </p>
                 <p>{{cocktail.ingredients}}</p>
                 <p>{{cocktail.ingredients}} </p>
-                <form action="phpScripts/test.php" method="post">
-                    <button name="led1On" class="btn btn-default" type="button" ng-click="make()">Sequence 1</button>
-                </form>
+                <input name="led1On" class="btn btn-default" type="button" ng-click="make()">Sequence 1</input>
             </div>
         </li>
     </ul>
