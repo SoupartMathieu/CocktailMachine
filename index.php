@@ -46,7 +46,8 @@ system("gpio mode 2 out");
             </div>
             <div >
                 <div ng-repeat="ingredient in cocktail.ingredients" class="cocktail-description">
-                    <p ng-repeat="(key,value) in ingredient">{{key}} : {{ value }} </p>
+                    <p ng-repeat="(key,value) in ingredient">{{key}} : {{ value }}
+
                 </div>
                 <form method="post" action="submit.php">
                      <input  name="{{cocktail.name}}" class="btn btn-default" type="submit" value="Creer le cocktail" >
