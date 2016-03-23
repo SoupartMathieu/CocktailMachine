@@ -31,18 +31,4 @@ app.controller('cocktailController', function ($scope) {
 
         }
     ];
-    $scope.make = function(){
-        var pin = 0;
-
-
-         var  wpi = require('wiring-pi');
-        wpi.wiringPiSetup();
-        wpi.pinMode(pin, wpi.OUTPUT);
-
-        (wpi.HIGH) ?  wpi.digitalWrite(pin, wpi.LOW) : wpi.digitalWrite(pin, wpi.HIGH) ;
-
-        console.log("test");
-
-        }
-
 });

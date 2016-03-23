@@ -2,6 +2,7 @@
 system("gpio mode 0 out");
 system("gpio mode 1 out");
 system("gpio mode 2 out");
+
 ?>
 <html>
 <head>
@@ -9,7 +10,6 @@ system("gpio mode 2 out");
     <link href="css/main.css" rel="stylesheet">
     <script type="text/javascript" src="js/angular.min.js"></script>
     <script type="text/javascript" src="controllers/cocktailController.js"></script>
-    <script src="node_modules/wiring-pi"></script>
     <script src="js/npm.js"></script>
 </head>
 <body ng-app="cocktailMachine">
@@ -35,19 +35,27 @@ system("gpio mode 2 out");
         <button name="led3Off" class="btn btn-danger">Led 3 Off</button>
     </p>
 </form>
-<div ng-controller="cocktailController">
-    <ul>
-        <li ng-repeat="cocktail in cocktails">
-            <div class="container-fluid cocktail-display">
+<div class="container cocktailContainer" ng-controller="cocktailController">
+
+    {{cocktails[1].ingredients.get(1)}}
+    <div ng-repeat="cocktail in cocktails" class="cocktail-display">
+        <div class="container-fluid">
+            <h3> {{cocktail.name}}</h3>
+            <div class="cocktail-image">
                 <img class="img-rounded" src="{{cocktail.image}}">
-                <p>{{cocktail.ingredients}} </p>
-                <p>{{cocktail.ingredients}}</p>
-                <p>{{cocktail.ingredients}} </p>
-                <input name="led1On" class="btn btn-default" type="button" ng-click="make()">Sequence 1</input>
             </div>
-        </li>
-    </ul>
+            <div >
+                <div ng-repeat="ingredient in cocktail.ingredients" class="cocktail-description">
+                    <p ng-repeat="(key,value) in ingredient">{{key}} : {{ value }} </p>
+                </div>
+                <form method="post" action="submit.php">
+                     <input  name="{{cocktail.name}}" class="btn btn-default" type="submit" value="Creer le cocktail" >
+                </form>
+            </div>
+  </div>
+        </div>
 
 </div>
+
 </body>
 </html>
