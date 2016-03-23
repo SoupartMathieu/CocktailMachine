@@ -1,19 +1,33 @@
-.On{
-    height: 30%;
-    width: 30%;
-    background-color: green;
 
-}
-.off{
-    height: 30%;
-    width: 30%;
-    background-color: red;
-}
 body{
-    background-image: url(/resources/images/seamless_paper_texture.png);
+    background-image: url("../resources/images/bg.png");
 }
 .img-rounded{
     height: 140px;
     width: 140px;
     float: left;
+}
+
+.cocktailContainer{
+    background-color: rgba(0,0,0,0.2);
+    border-radius: 12px;
+    padding: 15px;
+}
+
+.cocktail-display{
+    margin-left: 15%;
+    width: 75%;
+    background-color: rgba(0,0,0,0.1);
+    border-radius: 12px;
+    padding: 15px;
+    margin-bottom: 2%;
+}
+
+.cocktail-description{
+
+    margin-left: 39%;
+}
+
+.cocktail-image{
+    width: 50%;
 }
