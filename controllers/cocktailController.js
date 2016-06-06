@@ -39,7 +39,7 @@ app.controller('cocktailController', function ($scope, $http) {
             headers: {
                 'value': 4
             }
-        }) ;
+        }).
         success(function(data, status, headers, config) {
         }).
         error(function(data, status, headers, config) {
