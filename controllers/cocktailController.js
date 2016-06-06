@@ -1,5 +1,5 @@
 var app = angular.module('cocktailMachine', []);
-app.controller('cocktailController', function ($scope) {
+app.controller('cocktailController', function ($scope, $http) {
 
     $scope.cocktails = [
         {
