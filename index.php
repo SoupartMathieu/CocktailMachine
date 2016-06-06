@@ -26,6 +26,7 @@ system("gpio mode 2 out");
 
 <div class="container cocktailContainer" ng-controller="cocktailController">
 
+
     {{cocktails[1].ingredients.get(1)}}
     <div ng-repeat="cocktail in cocktails" class="cocktail-display">
         <div class="container-fluid">
@@ -43,11 +44,12 @@ system("gpio mode 2 out");
                 </form>
             </div>
      </div>
-        <input ng-click="boutclic()" value="test">
-
+        <button ng-click="boutClic()" >
+            Increment
+        </button>
         </div>
 
-</div>
+
 
 </body>
 </html>
