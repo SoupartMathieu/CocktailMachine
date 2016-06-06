@@ -35,7 +35,9 @@ app.controller('cocktailController', function ($scope, $http) {
     $scope.boutClic = function(){
         $http.get('/test').
         success(function(data, status, headers, config) {
-
+            var msg = {
+                'payload' : "ca marche"
+            }
         }).
         error(function(data, status, headers, config) {
             // called asynchronously if an error occurs
