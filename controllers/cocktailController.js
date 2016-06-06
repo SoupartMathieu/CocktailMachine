@@ -33,7 +33,7 @@ app.controller('cocktailController', function ($scope, $http) {
 
     ];
     $scope.boutClic = function(){
-        $http.get('/test').
+        $http.get('http://192.168.1.19:1880/test').
         success(function(data, status, headers, config) {
             var msg = {
                 'payload' : "ca marche"
