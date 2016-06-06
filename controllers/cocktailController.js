@@ -33,7 +33,7 @@ app.controller('cocktailController', function ($scope) {
 
     ];
     $scope.boutClic = function(){
-        $http.get('localhost:1880/test').
+        $http.get('/test').
         success(function(data, status, headers, config) {
 
         }).
