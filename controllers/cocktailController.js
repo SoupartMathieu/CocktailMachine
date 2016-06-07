@@ -34,11 +34,11 @@ app.controller('cocktailController', function ($scope, $http) {
     ];
     $scope.boutClic = function(){
         $http({
-            method: 'GET',
+            method: 'POST',
             url: 'http://192.168.1.19:1880/test',
-            headers: {
-                'value': 4
-            }
+            data: {
+		value: 4
+		}  
         }).
         success(function(data, status, headers, config) {
         }).
