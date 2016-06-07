@@ -1,6 +1,7 @@
 var app = angular.module('cocktailMachine', []);
 app.controller('cocktailController', function ($scope, $http) {
 
+
     $scope.cocktails = [
         {
             'name':'ti-punch',

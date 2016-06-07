@@ -24,6 +24,19 @@ system("gpio mode 2 out");
     </nav>
 </header>
 
+
+<div class="container cocktailCreation" ng-controller="createCocktailController">
+
+    <label> Choisissez le nombre d'ingrédient voulu:</label>
+    <input value="{{nbreIngredients}}" >
+
+    <select ng-repeat="nbreIngredients">
+        <option value="rhum" disabled="disabled" selected="selected"></option>
+        <option value="tequila">One</option>
+        <option value="cointreau">Two</option>
+    </select>
+</div>
+
 <div class="container cocktailContainer" ng-controller="cocktailController">
 
 
