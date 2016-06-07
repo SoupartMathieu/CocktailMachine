@@ -37,7 +37,7 @@ app.controller('cocktailController', function ($scope, $http) {
     $scope.boutClic = function(cocktail) {
         d = new Date();
         var data = {
-            msg: cocktail.ingredients,
+            msg: cocktail,
             timestamp: d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds()
         };
         publishSocket.send(JSON.stringify(data)); // Send the msg object as a JSON-formatted string.
