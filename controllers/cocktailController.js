@@ -51,10 +51,10 @@ app.controller('cocktailController', function ($scope, $http) {
 =======
     var publishSocket = new WebSocket("ws://192.168.1.19:1880/test");
 
-    $scope.boutClic = function() {
+    $scope.boutClic = function(cocktail) {
         d = new Date();
         var data = {
-            msg: "lalalala",
+            msg: cocktail,
             timestamp: d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds()
         };
         publishSocket.send(JSON.stringify(data)); // Send the msg object as a JSON-formatted string.
