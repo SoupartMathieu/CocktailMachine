@@ -44,7 +44,7 @@ system("gpio mode 2 out");
                 </form>
             </div>
      </div>
-        <button ng-click="boutClic({{cocktail}})" >
+        <button ng-click="boutClic(cocktail)" >
             Increment
         </button>
         </div>
